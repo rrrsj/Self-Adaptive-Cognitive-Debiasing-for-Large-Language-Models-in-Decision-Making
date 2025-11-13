@@ -35,15 +35,12 @@ Run the judge_correct.ipynb you can get the accuracy of the ans.
 ### File Descroption
 In every domain and any Bias type (same in paper), you can see many files.
 ```
-availableing-bias.ipynb(same name with folder) answer the question contain bias don't use any methods
-cot.ipynb answer the question contain bias use cot 
-few shot.ipynb answer the question contain bias use few_shot
-few shot1.ipynb answer the question contain bias use few_shot
-multi-debate.ipynb answer the question contain bias use multi-debate 
-self_help.ipynb answer the question contain bias use self_help
-reflexion.ipynb answer the question contain bias use reflexion
-our_methods.ipynb answer the question contain bias use our methods
-without_think.ipynb and without_while.ipynb the ablation study
-ground_true.ipynb get the origin answer without any bias
-judge_correct.ipynb get the accuracy of methods
+Availableing-bias.ipynb(same name with folder) answer the question contain bias don't use any methods
+Cot.ipynb answer the question contain bias use cot
+Zero-shot.ipynb answer the question contain bias use self_help
+Few shot.ipynb answer the question contain bias use few_shot
+Multi-agent debate.ipynb answer the question contain bias use multi-debate 
+Self_help.ipynb answer the question contain bias use self_help
+Reflexion.ipynb answer the question contain bias use reflexion
+SACD.ipynb answer the question contain bias use our methods
 ```
