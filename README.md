@@ -3,6 +3,9 @@ You can run this project easy following these step.
 
 Before run any ipynb file you should add you openai-api-key or llama3-70b-key to file.
 
+### PIPELINE
+![pipeline](https://github.com/rrrsj/Self-Adaptive-Cognitive-Debiasing-for-Large-Language-Models-in-Decision-Making/blob/main/pic/pipeline.png)
+
 ### API
 We use gpt3.5-0125 and gpt-4o from openai, you can use your keys.
 
