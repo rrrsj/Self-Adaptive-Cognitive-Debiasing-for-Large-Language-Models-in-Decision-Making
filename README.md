@@ -35,7 +35,7 @@ Run the judge_correct.ipynb you can get the accuracy of the ans.
 ### File Descroption
 In every domain and any Bias type (same in paper), you can see many files.
 ```
-Availableing-bias.ipynb(same name with folder) answer the question contain bias don't use any methods
+Availableing-bias.ipynb (same file's name with folder) answer the question contain bias don't use any methods
 Cot.ipynb answer the question contain bias use cot
 Zero-shot.ipynb answer the question contain bias use self_help
 Few shot.ipynb answer the question contain bias use few_shot
