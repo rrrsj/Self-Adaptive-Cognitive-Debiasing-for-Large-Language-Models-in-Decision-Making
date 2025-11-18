@@ -47,3 +47,14 @@ Self_help.ipynb answer the question contain bias use self_help
 Reflexion.ipynb answer the question contain bias use reflexion
 SACD.ipynb answer the question contain bias use our methods
 ```
+### Cite
+```@misc{lyu2025selfadaptivecognitivedebiasinglarge,
+      title={Self-Adaptive Cognitive Debiasing for Large Language Models in Decision-Making}, 
+      author={Yougang Lyu and Shijie Ren and Yue Feng and Zihan Wang and Zhumin Chen and Zhaochun Ren and Maarten de Rijke},
+      year={2025},
+      eprint={2504.04141},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2504.04141}, 
+}
+```
