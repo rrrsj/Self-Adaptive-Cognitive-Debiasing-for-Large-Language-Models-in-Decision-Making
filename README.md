@@ -115,18 +115,20 @@ Lower = better. **SACD consistently achieves the lowest scores** 🏆.
 
 ```text
 project/
-├── data/                     # Raw & processed datasets (.jsonl)
 ├── pic/                      # Figures (e.g., pipeline.png)
-├── data_process.ipynb        # Preprocess datasets
-├── judge_correct.ipynb       # Evaluate answer correctness
-├── Availableing-bias.ipynb   # Baseline (biased)
-├── Cot.ipynb                 # Chain-of-Thought
-├── Zero-shot.ipynb           # Zero-shot debiasing
-├── Few shot.ipynb            # Few-shot debiasing
-├── Multi-agent debate.ipynb  # Multi-agent debate
-├── Self_help.ipynb           # Self-help method
-├── Reflexion.ipynb           # Reflexion
-└── SACD.ipynb                # 🌟 Our method!
+└── domain/
+  ├── data/                     # Raw & processed datasets (.jsonl)
+  └── bias_type
+    ├── data_process.ipynb        # Preprocess datasets
+    ├── judge_correct.ipynb       # Evaluate answer correctness
+    ├── Availableing-bias.ipynb   # Baseline (biased)
+    ├── Cot.ipynb                 # Chain-of-Thought
+    ├── Zero-shot.ipynb           # Zero-shot debiasing
+    ├── Few shot.ipynb            # Few-shot debiasing
+    ├── Multi-agent debate.ipynb  # Multi-agent debate
+    ├── Self_help.ipynb           # Self-help method
+    ├── Reflexion.ipynb           # Reflexion
+    └── SACD.ipynb                # 🌟 Our method!
 ```
 
 ---
