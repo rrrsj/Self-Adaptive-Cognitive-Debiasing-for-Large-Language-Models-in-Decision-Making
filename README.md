@@ -1,5 +1,3 @@
-当然可以！以下是**美化升级版 README**，采用更现代、清晰、富有视觉层次的 Markdown 风格，兼具学术严谨性与工程可读性，还加入了 Emoji、分割线、徽章占位符（可后续补充）、代码高亮提示等元素，让整个项目更“花哨”却不失专业：
-
 ---
 
 # 🧠 Self-Adaptive Cognitive Debiasing for Large Language Models in Decision-Making
