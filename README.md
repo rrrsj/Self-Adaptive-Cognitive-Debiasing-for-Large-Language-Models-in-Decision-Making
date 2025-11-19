@@ -33,7 +33,7 @@ This project explores various debiasing techniques for LLMs in decision-making, 
 
 ## Pipeline
 
-![pipeline](pic/2.png)
+![pipeline](pic/pipeline.png)
 
 _Visualization of the cognitive debiasing pipeline for LLMs._
 
