@@ -1,54 +1,92 @@
 # Self-Adaptive Cognitive Debiasing for Large Language Models in Decision-Making
-You can run this project easy following these step.
 
-Before run any ipynb file you should add you openai-api-key or llama3-70b-key to file.
+This repository provides implementations and evaluation pipelines for self-adaptive cognitive debiasing methods applied to large language models (*LLMs*) in decision-making scenarios.
 
-### PIPELINE
-![pipeline](https://github.com/rrrsj/Self-Adaptive-Cognitive-Debiasing-for-Large-Language-Models-in-Decision-Making/blob/main/pic/pipeline.png)
+## Table of Contents
 
-### API
-We use gpt3.5-0125 and gpt-4o from openai, you can use your keys.
+- [Overview](#overview)
+- [Quick Start](#quick-start)
+- [Pipeline](#pipeline)
+- [APIs](#apis)
+- [Dataset Preparation](#dataset-preparation)
+- [Evaluation](#evaluation)
+- [Obtaining Results](#obtaining-results)
+- [File Descriptions](#file-descriptions)
+- [Citation](#citation)
 
-We use llama3-70b from groq, its free you can get the keys from Groq.
+## Overview
 
-### Get Data
-First, you can download the original dataset from the link in the dataset paper.
+This project explores various debiasing techniques for LLMs in decision-making, including Chain-of-Thought (CoT), Zero-Shot, Few-Shot, Multi-Agent Debate, Reflexion, and our proposed SACD method. Experiments span multiple domains and bias types.
 
-Then you should make a new folder named data and add the original dataset.
+## Quick Start
 
-You can get a jsonl after you run the ```data_process.ipynb```
+1. **API Keys**
+   - Before running any `.ipynb` files, add your API keys:
+     - **OpenAI** (`gpt-3.5-0125`, `gpt-4o`): Obtain keys from [OpenAI](https://platform.openai.com/)
+     - **Groq (LLaMA3-70B)**: Obtain free API keys from [Groq](https://groq.com/)
 
-The jsonl while buile in data files.
+2. **Setting API Keys**
+   - Insert your API key at the top of relevant `.ipynb` files:
+   ```python
+   client = OpenAI(api_key="YOUR_OPENAI_API_KEY")
+   ```
 
-### Evaluate
-You can run any Bias type and DeBias methods use the jsonl file that get in the first step.
+## Pipeline
 
-First add the openai-key in file start.
-```
-client = OpenAI(
-    api_key="",
-)
-```
-Then you can run the any file that you need.
+![pipeline](pic/pipeline.png)
+_Visualization of the cognitive debiasing pipeline for LLMs._
 
+## APIs
 
-### Get Result
-Run the judge_correct.ipynb you can get the accuracy of the ans.
+- **OpenAI models** used: `gpt-3.5-0125` and `gpt-4o`
+- **Groq models** used: `llama3-70b` (free API keys available)
 
-### File Descroption
-In every domain and any Bias type (same in paper), you can see many files.
-```
-Availableing-bias.ipynb (same file's name with folder) answer the question contain bias don't use any methods
-Cot.ipynb answer the question contain bias use cot
-Zero-shot.ipynb answer the question contain bias use self_help
-Few shot.ipynb answer the question contain bias use few_shot
-Multi-agent debate.ipynb answer the question contain bias use multi-debate 
-Self_help.ipynb answer the question contain bias use self_help
-Reflexion.ipynb answer the question contain bias use reflexion
-SACD.ipynb answer the question contain bias use our methods
-```
-### Cite
-```@misc{lyu2025selfadaptivecognitivedebiasinglarge,
+## Dataset Preparation
+
+1. Download the original dataset from the paper's official link.
+2. Create a `data/` directory and add the dataset files.
+3. Run **`data_process.ipynb`** to preprocess data and generate the `.jsonl` file in the `data` folder.
+
+## Evaluation
+
+You can evaluate various bias types and debiasing methods using the generated `.jsonl` file.
+
+- Ensure your API keys are set at the beginning of each notebook.
+- Execute the notebook file for your desired method/domain:
+  - For **Bias Only**: `Availableing-bias.ipynb`
+  - For **Chain-of-Thought (CoT)**: `Cot.ipynb`
+  - For **Zero-Shot**: `Zero-shot.ipynb`
+  - For **Few Shot**: `Few shot.ipynb`
+  - For **Multi-Agent Debate**: `Multi-agent debate.ipynb`
+  - For **Self Help**: `Self_help.ipynb`
+  - For **Reflexion**: `Reflexion.ipynb`
+  - For **Our Method (SACD)**: `SACD.ipynb`
+
+## Obtaining Results
+
+- To evaluate the accuracy of responses, run **`judge_correct.ipynb`**.
+
+## File Descriptions
+
+Each domain and bias type (as in the paper) contains several notebooks:
+
+| File Name             | Description                                                      |
+|-----------------------|------------------------------------------------------------------|
+| Availableing-bias.ipynb | Baseline (biased answers, no debiasing)                        |
+| Cot.ipynb               | Chain-of-Thought debiasing                                     |
+| Zero-shot.ipynb         | Zero-shot debiasing                                            |
+| Few shot.ipynb          | Few-shot debiasing                                             |
+| Multi-agent debate.ipynb| Multi-agent debate debiasing                                   |
+| Self_help.ipynb         | Self-help method                                               |
+| Reflexion.ipynb         | Reflexion method                                               |
+| SACD.ipynb              | Our method (Self-Adaptive Cognitive Debiasing)                |
+
+## Citation
+
+If you use this work, please cite:
+
+```bibtex
+@misc{lyu2025selfadaptivecognitivedebiasinglarge,
       title={Self-Adaptive Cognitive Debiasing for Large Language Models in Decision-Making}, 
       author={Yougang Lyu and Shijie Ren and Yue Feng and Zihan Wang and Zhumin Chen and Zhaochun Ren and Maarten de Rijke},
       year={2025},
@@ -58,3 +96,7 @@ SACD.ipynb answer the question contain bias use our methods
       url={https://arxiv.org/abs/2504.04141}, 
 }
 ```
+
+---
+
+Feel free to open issues or pull requests for questions or suggestions!
