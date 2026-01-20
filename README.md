@@ -153,14 +153,11 @@ If you use **SACD** or this codebase in your research, please cite:
 Or use the arXiv version:
 
 ```bibtex
-@misc{lyu2025selfadaptivecognitivedebiasinglarge,
-  title={Self-Adaptive Cognitive Debiasing for Large Language Models in Decision-Making}, 
-  author={Yougang Lyu and Shijie Ren and Yue Feng and Zihan Wang and Zhumin Chen and Zhaochun Ren and Maarten de Rijke},
-  year={2025},
-  eprint={2504.04141},
-  archivePrefix={arXiv},
-  primaryClass={cs.CL},
-  url={https://arxiv.org/abs/2504.04141}
+@article{lyu2025cognitive,
+  title={Cognitive debiasing large language models for decision-making},
+  author={Lyu, Yougang and Ren, Shijie and Feng, Yue and Wang, Zihan and Chen, Zhumin and Ren, Zhaochun and de Rijke, Maarten},
+  journal={arXiv preprint arXiv:2504.04141},
+  year={2025}
 }
 ```
 
