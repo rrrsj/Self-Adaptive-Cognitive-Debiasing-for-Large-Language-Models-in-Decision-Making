@@ -137,20 +137,6 @@ project/
 
 If you use **SACD** or this codebase in your research, please cite:
 
-```bibtex
-@article{lyu2025selfadaptive,
-  title={Self-Adaptive Cognitive Debiasing for Large Language Models in Decision-Making},
-  author={Lyu, Yougang and Ren, Shijie and Feng, Yue and Wang, Zihan and Chen, Zhumin and Ren, Zhaochun and de Rijke, Maarten},
-  journal={ACM Transactions on Information Systems},
-  year={2025},
-  volume={1},
-  number={1},
-  pages={1--29},
-  doi={https://doi.org/...}
-}
-```
-
-Or use the arXiv version:
 
 ```bibtex
 @article{lyu2025cognitive,
